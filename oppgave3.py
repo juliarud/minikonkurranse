@@ -1,48 +1,29 @@
 """
-Wildcard Matching
-Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*' where:
-
-'?' Matches any single character.
-'*' Matches any sequence of characters (including the empty sequence).
-The matching should cover the entire input string (not partial).
+Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+If target is not found in the array, return [-1, -1].
 
 Example 1:
-
-Input: s = "aa", p = "a"
-Output: false
-Explanation: "a" does not match the entire string "aa".
+Input: nums = [5,7,7,8,8,10], target = 8
+Output: [3,4]
 
 Example 2:
-
-Input: s = "aa", p = "*"
-Output: true
-Explanation: '*' matches any sequence.
+Input: nums = [5,7,7,8,8,10], target = 6
+Output: [-1,-1]
 
 Example 3:
-
-Input: s = "cb", p = "?a"
-Output: false
-Explanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'.
-
-Example 4:
-
-Input: s = "adceb", p = "*a*b"
-Output: true
-Explanation: The first '*' matches the empty sequence, while the second '*' matches the substring "dce".
-
-Example 5:
-
-Input: s = "acdcb", p = "a*c?b"
-Output: false
+Input: nums = [], target = 0
+Output: [-1,-1]
+ 
 
 Constraints:
 
-0 <= s.length, p.length <= 2000
-s contains only lowercase English letters.
-p contains only lowercase English letters, '?' or '*'. 
+0 <= nums.length <= 105
+-109 <= nums[i] <= 109
+nums is a non-decreasing array.
+-109 <= target <= 109
 """
 
-def isMatch(self, s: str, p: str) -> bool:
-    return #Return boolean Value
+def searchRange(number_list, target):
+    #Return list with length 2, with first and last position of the target in the list
+    return 
 
-    
