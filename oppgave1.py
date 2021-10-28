@@ -18,3 +18,10 @@ The given address is a valid IPv4 address.
 def defangIPaddr(ip_adresse):
     #Return a string
     return 
+
+
+#tester
+assert(defangIPaddr("2.3.4.11.5")) == "2[.]3[.]4[.]11[.]5"
+assert(defangIPaddr("1.1.1.1")) == "1[.]1[.]1[.]1"
+assert(defangIPaddr("255.100.50.0")) == "255[.]100[.]50[.]0"
+

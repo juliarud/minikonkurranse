@@ -1,29 +1,50 @@
-""" Word to Bitstring to Boolean List
+"""
+Given a string s and an integer array indices of the same length.
+The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
+Return the shuffled string.
 
-Create a function that converts a word to a bitstring and then to a boolean list based on the following criteria:
+ Example 1:
 
-Locate the position of the letter in the English alphabet (from 1 to 26).
-Odd positions will be represented as 1 and even positions will be represented as 0.
-Convert the represented positions to boolean values, 1 for True and 0 for False.
-Store the conversions into an array.
+Input: s = "codeleet", indices = [4,5,6,7,0,2,1,3]
+Output: "leetcode"
+Explanation: As shown, "codeleet" becomes "leetcode" after shuffling.
 
-Examples
+Example 2:
 
-to_boolean_list("deep") ➞ [False, True, True, False]
-# deep converts to 0110
-# d is the 4th alphabet - 0
-# e is the 5th alphabet - 1
-# e is the 5th alphabet - 1
-# p is the 16th alphabet - 0
+Input: s = "abc", indices = [0,1,2]
+Output: "abc"
+Explanation: After shuffling, each character remains in its position.
 
-to_boolean_list("loves") ➞ [False, True, False, True, True]
+Example 3:
 
-to_boolean_list("tesh") ➞ [False, True, True, False]
-Notes
+Input: s = "aiohn", indices = [3,1,4,2,0]
+Output: "nihao"
 
-The letter A is at position 1 and Z at 26.
-All input strings are in lowercase letters of the English alphabet."""
+Example 4:
 
-def to_boolean_list(word):
-    #Fill out the function here 
-	return #Retun boolean list
+Input: s = "aaiougrt", indices = [4,0,2,6,7,3,1,5]
+Output: "arigatou"
+
+Example 5:
+
+Input: s = "art", indices = [1,0,2]
+Output: "rat"
+ 
+
+Constraints:
+
+s.length == indices.length == n
+1 <= n <= 100
+s contains only lower-case English letters.
+0 <= indices[i] < n
+All values of indices are unique (i.e. indices is a permutation of the integers from 0 to n - 1). 
+"""
+
+def restoreString(ord, liste):
+    #Return the shuffeled string
+    return 
+
+assert(restoreString("ord", [1,0,2])) == "rod"
+assert(restoreString("Hannah",[5,4,3,2,1,0])) == "hannaH"
+assert(restoreString("jul", [2,0,1])) == "ulj"
+assert(restoreString("Olebrumm", [7,5,4,6,1,0,2,3])) == "urmmelbO"
